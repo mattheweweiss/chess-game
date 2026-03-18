@@ -3,5 +3,15 @@ package chess;
 /**
  * Class for Pawn chess piece.
  */
-public class Pawn extends AbstractChessPiece {
+class Pawn extends AbstractChessPiece {
+
+  Pawn(Color color) {
+    super(color);
+  }
+
+  @Override
+  public String toString() {
+    return "p";
+  }
+
 }

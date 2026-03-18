@@ -20,8 +20,8 @@ public interface ChessBoard {
   /**
    * Returns chess board as data structure.
    *
-   * @return 2d String array of the board
+   * @return 2d ChessPiece array of the board
    */
-  String[][] getBoard();
+  ChessPiece[][] getBoard();
 
 }

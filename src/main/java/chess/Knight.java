@@ -3,5 +3,15 @@ package chess;
 /**
  * Class for Knight chess piece.
  */
-public class Knight extends AbstractChessPiece {
+class Knight extends AbstractChessPiece {
+
+  Knight(Color color) {
+    super(color);
+  }
+
+  @Override
+  public String toString() {
+    return "N";
+  }
+
 }

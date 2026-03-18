@@ -3,5 +3,15 @@ package chess;
 /**
  * Class for King chess piece.
  */
-public class King extends AbstractChessPiece {
+class King extends AbstractChessPiece {
+
+  King(Color color) {
+    super(color);
+  }
+
+  @Override
+  public String toString() {
+    return "K";
+  }
+
 }

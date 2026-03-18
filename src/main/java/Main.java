@@ -1,5 +1,5 @@
-package chess;
-
+import chess.ChessBoard;
+import chess.ChessBoardImpl;
 import java.util.Scanner;
 
 /**
@@ -13,6 +13,10 @@ public class Main {
    * @param args arguments run with application
    */
   public static void main(String[] args) {
+
+    ChessBoard board = new ChessBoardImpl();
+    board.buildBoard();
+    System.out.println(board.visualizeBoard());
 
     Scanner sc = new Scanner(System.in);
     String command = sc.nextLine();
