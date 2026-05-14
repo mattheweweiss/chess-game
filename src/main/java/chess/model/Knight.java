@@ -1,4 +1,4 @@
-package chess;
+package chess.model;
 
 /**
  * Class for Knight chess piece.

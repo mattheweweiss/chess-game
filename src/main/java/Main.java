@@ -1,5 +1,5 @@
-import chess.ChessBoard;
-import chess.ChessBoardImpl;
+import chess.model.ChessBoard;
+import chess.model.ChessBoardImpl;
 import java.util.Scanner;
 
 /**

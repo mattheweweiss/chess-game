@@ -1,4 +1,4 @@
-package chess;
+package chess.model;
 
 /**
  * Abstract class implementing methods for ChessPiece implementors with same implementation.

@@ -1,4 +1,4 @@
-package chess;
+package chess.model;
 
 /**
  * Interface dictating method for ChessPiece implementations.
