@@ -1,9 +1,11 @@
 package chess.model;
 
+import chess.Color;
+
 /**
  * Implementation for ChessBoard.
  */
-public class ChessBoardImpl implements ChessBoard {
+class ChessBoardImpl implements ChessBoard {
 
   private final ChessPiece[][] board;
 
@@ -13,6 +15,7 @@ public class ChessBoardImpl implements ChessBoard {
    */
   public ChessBoardImpl() {
     board = new ChessPiece[8][8];
+    buildBoard();
   }
 
   private void buildWhite() {

@@ -1,5 +1,7 @@
 package chess.model;
 
+import chess.Color;
+
 /**
  * Interface dictating method for ChessPiece implementations.
  */

@@ -1,5 +1,7 @@
 package chess.model;
 
+import chess.Color;
+
 /**
  * Class for Bishop chess piece.
  */

@@ -3,7 +3,7 @@ package chess.model;
 /**
  * Interface dictating methods for chess board implementation.
  */
-public interface ChessBoard {
+interface ChessBoard {
 
   /**
    * Initializes chess game -- sets up pieces in correct places.

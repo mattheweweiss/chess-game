@@ -1,4 +1,4 @@
-package chess.model;
+package chess;
 
 /**
  * Enumeration for game/chess piece colors.

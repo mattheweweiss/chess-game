@@ -1,4 +1,4 @@
-package chess.model;
+package chess.controller;
 
 /**
  * Enumeration for player commands.

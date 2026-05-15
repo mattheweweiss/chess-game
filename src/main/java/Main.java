@@ -1,5 +1,5 @@
-import chess.model.ChessBoard;
-import chess.model.ChessBoardImpl;
+import chess.model.Game;
+import chess.model.GameImpl;
 import java.util.Scanner;
 
 /**
@@ -14,9 +14,7 @@ public class Main {
    */
   public static void main(String[] args) {
 
-    ChessBoard board = new ChessBoardImpl();
-    board.buildBoard();
-    System.out.println(board.visualizeBoard());
+    Game game = new GameImpl();
 
     Scanner sc = new Scanner(System.in);
     String command = sc.nextLine();
