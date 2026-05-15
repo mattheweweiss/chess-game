@@ -1,6 +1,7 @@
+import chess.controller.GameController;
+import chess.controller.GameControllerImpl;
 import chess.model.Game;
 import chess.model.GameImpl;
-import java.util.Scanner;
 
 /**
  * The chess game application.
@@ -13,16 +14,8 @@ public class Main {
    * @param args arguments run with application
    */
   public static void main(String[] args) {
-
     Game game = new GameImpl();
-
-    Scanner sc = new Scanner(System.in);
-    String command = sc.nextLine();
-
-    while(!command.equals("exit")) {
-      System.out.printf("Chess is gonna be %s tonight honey", command);
-      command = sc.nextLine();
-    }
-
+    GameController controller = new GameControllerImpl(game);
+    controller.run();
   }
 }
