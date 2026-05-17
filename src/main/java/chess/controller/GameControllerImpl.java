@@ -22,23 +22,30 @@ public class GameControllerImpl implements GameController {
 
   @Override
   public void run() {
+    boolean exit = false;
     String command;
+    String action;
     Scanner input = new Scanner(System.in);
 
-    while (true) {
+    while (!exit) {
       try {
         command = input.nextLine().strip();
+        action = command.split(" ")[0].toUpperCase();
       } catch (NoSuchElementException e) {
         break;
       }
 
       try {
-        if (command.toLowerCase().equals("exit")) {
-          break;
+        Command.valueOf(action);
+
+        switch (action) {
+          case "EXIT":
+            exit = true;
+            break;
         }
 
-      } catch (Exception e) {
-        break;
+      } catch (IllegalArgumentException iae) {
+
       }
     }
 
